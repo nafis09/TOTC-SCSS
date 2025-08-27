@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTC Meeting</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+  
+
+
+<section id="firsts">
+
+  <aside>
+
+    <div class="left">
+
+      <div class="l1">
+        <img src="images/backbtn.png" alt="">
+      </div>
+      <div class="l5">
+        <div class="l2">
+          <h1>UX/UI Design Confrence Meeting</h1>
+          <img src="images/set.png" alt="">
+        </div>
+        <div class="l3">
+          <p>9 Lesson 6h 30min</p>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="limg1">
+    <img src="images/meeting.png" alt="">
+    </div>
+
+ </aside>
+
+ <main>
+    <div class="right">
+          
+        <div class="all-base">
+            <div class="all-box">
+                <div class="pr">
+                <h1>Course Contents</h1>
+                </div>
+                <div class="info">
+                    <h6>2/5 COMPLETED</h6>
+                    <img src="images/m1.png" alt="">
+                </div>
+                <img src="images/Group 317.png" alt="">
+
+                   
+                    <button class="accordion">Get Started</button>
+                    
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <img src="images/Group 321.png" alt="">
+
+
+                    
+                    <button class="accordion">Illstarator Structuors</button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <img src="images/Group 321.png" alt="">
+
+                    
+                    <button class="accordion">Using Illstarator</button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <img src="images/Group 321.png" alt="">
+                   
+                    <button class="accordion">What is Pandas?</button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <img src="images/Group 321.png" alt="">
+                    
+                    
+                    <button class="accordion">Work with Numpy</button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <img src="images/Group 321.png" alt="">
+    
+  
+            </div>
+                
+        </div>
+    </div>
+         
+            <div class="limg">
+            <img src="images/Group 419.png" alt="">
+            </div>
+  
+ </main>
+
+ </section>
+ 
+
+
+
+
+ <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+ 
+ </body>
+
+ </html>
