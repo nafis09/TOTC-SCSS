@@ -1164,15 +1164,7 @@ img {
 
 /* login-design */
 
-#login {
-   @extend .margins;
-   aside {
-    width: 50%;  
-   }
-   main {
-    margin-left: 100px;
-    width: 50%;
-        a.btnseag {
+@mixin btnsea1 {
             background-color: $primary-color;
             width: 232px;
             height: 49px;
@@ -1187,134 +1179,9 @@ img {
             font-size: 16px;
             line-height: 100%;
             margin-left: 200px;
-        }
-        a.btn-right {
-            font-family: $font;
-            font-weight: 300;
-            font-size: 12px;
-            line-height: 100%;
-            text-decoration-style: solid;
-            color: #000000;
-            text-decoration: none;
-            margin-left: 180px;
-            
-        }
-   }
-   .right{
-        h1 {
-            font-family: $font;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 100%;
-            color: #000000;
-            padding-bottom: 30px;
-            padding-left: 150px;
-        }
-        p {
-            font-family: $font;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 100%;
-            color: $gray;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        .btn {
-            width: 350px;
-            height: 60px;
-            margin-left: 60px;
-            border-radius: 33px;
-            background-color: #49BBBD99;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: 15px;
-            padding-bottom: 10px;
-            display: flex;
-            a.btnsea {
-                background-color: $primary-color;
-                width: 146px;
-                height: 40px;
-                top: 203px;
-                left: 955px;
-                border-radius: 33px;
-                color: $white;
-                padding: 10px 40px 10px 40px;
-                text-decoration: none;
-                font-family: $font;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 100%;
-                margin-left: 20px;
-            }
-            a.btn2 {
-                font-family: $font;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 100%;
-                color: $white;
-                text-decoration: none;
-                width: 329px;
-                height: 59px;
-                top: 193px;
-                left: 942px;
-                padding-top: 20px;
-                
-            }
-        }
-    }
-    .form {
-        input {
-        width: 435px;
-        height: 54px;
-        border-radius: 40px;
-        border-width: 1px;
-        color: #ACACAC;
-        font-family: $font;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 100%;
-        padding: 10px 20px 10px 20px;
-        margin-right: 20px;
-        border-color: $primary-color;
-        background-color: $white;
-      }
-      label {
-        font-family: $font;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 100%;
-      }
-    }
 }
 
-/* register-design */
-
-#register {
-   @extend .margins;
-   aside {
-    width: 50%;  
-   }
-   main {
-    margin-left: 100px;
-    width: 50%;
-        a.btnseag {
-            background-color: $primary-color;
-            width: 232px;
-            height: 49px;
-            top: 707px;
-            left: 1092px;
-            border-radius: 36px;
-            color: $white;
-            padding: 15px 95px 15px 95px;
-            text-decoration: none;
-            font-family: $font;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 100%;
-            margin-left: 200px;
-        }
-        a.btn-right {
+@mixin btn-right1 {
             font-family: $font;
             font-weight: 300;
             font-size: 12px;
@@ -1322,12 +1189,11 @@ img {
             text-decoration-style: solid;
             color: #000000;
             text-decoration: none;
-            margin-left: 180px;
-            
-        }
-   }
-   .right{
-        h1 {
+            margin-left: 180px;    
+}
+
+@mixin rightmain {
+     h1 {
             font-family: $font;
             font-weight: 400;
             font-size: 16px;
@@ -1389,8 +1255,9 @@ img {
                 
             }
         }
-    }
-    .form {
+}
+
+@mixin mainform {
         input {
         width: 435px;
         height: 54px;
@@ -1412,9 +1279,55 @@ img {
         font-size: 16px;
         line-height: 100%;
       }
+}
+
+#login {
+   @extend .margins;
+   aside {
+    width: 50%;  
+   }
+   main {
+    margin-left: 100px;
+    width: 50%;
+        a.btnseag {
+          @include btnsea1;
+        }
+        a.btn-right {
+          @include btn-right1;
+        }
+   }
+   .right{
+       @include rightmain;
+    }
+    .form {
+       @include mainform;
     }
 }
 
+/* register-design */
+
+#register {
+   @extend .margins;
+   aside {
+    width: 50%;  
+   }
+   main {
+    margin-left: 100px;
+    width: 50%;
+        a.btnseag {
+          @include btnsea1;
+        }
+        a.btn-right {
+          @include btn-right1;
+        }
+   }
+   .right{
+       @include rightmain;
+    }
+    .form {
+       @include mainform;
+    }
+}
 
 /* blog-design */
 
