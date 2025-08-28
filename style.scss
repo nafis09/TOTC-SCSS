@@ -135,14 +135,10 @@ a {
     background-image: url("images/bg-with-image.png");
     background-repeat: no-repeat;
 
-
-
 .left {
-    align-items: left;
-    justify-content: left;
-    text-align: left;
+    margin-right: 225px;
 
-h1 {
+  h1 {
     font-family: $font;
     font-weight: 700;
     font-size: 54px;
@@ -150,54 +146,52 @@ h1 {
     color: $white;
     padding-bottom: 30px;
 
-.orange-txt {
-    font-family: $font;
-    font-weight: 700;
-    font-size: 54px;
-    line-height: 100%;
-    color: orange;
-}
-}
+    .orange-txt {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 100%;
+        color: orange;
+    }
+  }
 
-p {
-    font-family: $font-alt;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 160%;
-    color: $white;
-    padding-top: 20px;
-    padding-bottom: 100px;
-} 
+    p {
+        font-family: $font-alt;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 160%;
+        color: $white;    
+        padding-bottom: 100px;
+    } 
 
-a.btn-transparent {
-    background-color: $white-transparent;
-    width: 220px;
-    height: 80px;
-    top: 659px;
-    left: 100px;
-    opacity: 1;
-    border-radius: 80px;
-    color: $white;
-    padding: 20px 40px 20px 40px;
-    text-decoration: none;
-    font-family: $font;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 100%;
-}
+    a.btn-transparent {
+        background-color: $white-transparent;
+        width: 220px;
+        height: 80px;
+        top: 659px;
+        left: 100px;
+        opacity: 1;
+        border-radius: 80px;
+        color: $white;
+        padding: 20px 40px 20px 40px;
+        text-decoration: none;
+        font-family: $font;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+    }
 }
 
 .left-btn {
     position: relative;
     display: flex;
-    width: 232px;
-    height: 36px;
     top: 170px;
-    right: 300px;
+    right: 600px;
+
  
 img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
 }
 
  p {
@@ -206,7 +200,7 @@ img {
     font-size: 20px;
     line-height: 100%;
     color: #252641;
-    padding-right: 40px;
+   padding-top: 35px;
 } 
 }
 
@@ -225,19 +219,18 @@ img {
 }
 
 .img2 {
-    padding-bottom: 200px;
+    padding-bottom: 250px;
+    padding-left: 250px;
 }
 
 .achievement-cards {
      .achievement-card1,
      .achievement-card2,
      .achievement-card3 {
-        width: 300px;
-        height: 200px;
         color: $gray2;
         background-color: $white-semi;
         backdrop-filter: blur(20px);
-        padding: 10px 40px 10px 40px;
+        padding: 20px 40px 20px 40px;
         display: flex;
         position: absolute;
         border-radius: 20px;
@@ -269,7 +262,7 @@ img {
 }
 
 .achievement-card1 {
-    top: 409px;
+    top: 455px;
     left: 895px;
 
     .content img {
@@ -281,6 +274,7 @@ img {
 .achievement-card2 {
     top: 744px;
     left: 883px;
+    
 
     .content{
         img {
@@ -296,26 +290,27 @@ img {
 
         a.btn-pink {
             background-color: $pink;
-            width: 160px;
-            height: 60px;
-            padding: 10px 40px 10px 40px;
+            width: 180px;
+            height: 50px;
+            padding: 15px 50px 15px 50px;
             border-radius: 80px;
             color: $white;
+            text-decoration: none;
         }
     }
 }
 
 .achievement-card3 {
     top: 604px;
-    left: 1424px;  
+    left: 1424px; 
     .content img{
-    width: 50px;
-    height: 50px;
-    top: 634px;
-    left: 1450px;
-    border-radius: 8px;
-    background-color: orange;
-    padding: 10px;
+        width: 50px;
+        height: 50px;
+        top: 634px;
+        left: 1450px;
+        border-radius: 8px;
+        background-color: orange;
+        padding: 10px;
     }
 }
 
@@ -328,7 +323,7 @@ img {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 10vw;
+    padding: 5vw;
     h1 {
      font-family: $font-alt2;
      font-weight: 700;
