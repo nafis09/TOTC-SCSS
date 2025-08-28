@@ -569,7 +569,7 @@ nav .navigation ul li a.btn-transparent {
   align-items: center;
 }
 
-.margins, #news, #testimonial, #discussions, #management, #quiz, #tools, #features {
+.margins, #register, #login, #news, #testimonial, #discussions, #management, #quiz, #tools, #features {
   display: flex;
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -961,104 +961,13 @@ nav .navigation ul li a.btn-transparent {
 }
 
 /* login-design */
-#login {
-  display: flex;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
-  padding: 4vw 2vw 4vw 8vw;
-}
-
 #login aside {
   width: 50%;
 }
-
 #login main {
+  margin-left: 100px;
   width: 50%;
 }
-
-#login .right h1 {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #000000;
-  padding-bottom: 30px;
-  padding-left: 150px;
-}
-
-#login .right p {
-  color: #5B5B5B;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#login .right .btn {
-  width: 350px;
-  height: 60px;
-  margin-left: 60px;
-  border-radius: 33px;
-  background-color: rgba(73, 187, 189, 0.6);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  display: flex;
-}
-
-#login .right .btn a.btnsea {
-  background-color: #49BBBD;
-  width: 146px;
-  height: 40px;
-  top: 203px;
-  left: 955px;
-  border-radius: 33px;
-  color: #FFFFFF;
-  padding: 10px 40px 10px 40px;
-  text-decoration: none;
-  font-family: "Poppins";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  margin-left: 20px;
-}
-
-#login .right .btn a.btn2 {
-  font-family: "Poppins";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  color: #FFFFFF;
-  text-decoration: none;
-  width: 329px;
-  height: 59px;
-  top: 193px;
-  left: 942px;
-  padding-top: 20px;
-}
-
-#login .form input {
-  width: 435px;
-  height: 54px;
-  border-radius: 40px;
-  border-width: 1px;
-  color: #ACACAC;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 100%;
-  padding: 10px 20px 10px 20px;
-  margin-right: 20px;
-  border-color: #49BBBD;
-  background-color: #FFFFFF;
-}
-
 #login main a.btnseag {
   background-color: #49BBBD;
   width: 232px;
@@ -1075,7 +984,6 @@ nav .navigation ul li a.btn-transparent {
   line-height: 100%;
   margin-left: 200px;
 }
-
 #login main a.btn-right {
   font-family: "Poppins";
   font-weight: 300;
@@ -1086,26 +994,7 @@ nav .navigation ul li a.btn-transparent {
   text-decoration: none;
   margin-left: 180px;
 }
-
-/* register-design */
-#register {
-  display: flex;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
-  padding: 4vw 2vw 4vw 8vw;
-}
-
-#register aside {
-  width: 50%;
-}
-
-#register main {
-  width: 50%;
-}
-
-#register .right h1 {
+#login .right h1 {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
@@ -1114,18 +1003,16 @@ nav .navigation ul li a.btn-transparent {
   padding-bottom: 30px;
   padding-left: 150px;
 }
-
-#register .right p {
-  color: #5B5B5B;
+#login .right p {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
+  color: #5B5B5B;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-#register .right .btn {
+#login .right .btn {
   width: 350px;
   height: 60px;
   margin-left: 60px;
@@ -1138,11 +1025,12 @@ nav .navigation ul li a.btn-transparent {
   padding-bottom: 10px;
   display: flex;
 }
-
-#register .right .btn a.btnsea {
+#login .right .btn a.btnsea {
   background-color: #49BBBD;
   width: 146px;
   height: 40px;
+  top: 203px;
+  left: 955px;
   border-radius: 33px;
   color: #FFFFFF;
   padding: 10px 40px 10px 40px;
@@ -1151,10 +1039,9 @@ nav .navigation ul li a.btn-transparent {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  margin-right: 15px;
+  margin-left: 20px;
 }
-
-#register .right .btn a.btn2 {
+#login .right .btn a.btn2 {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
@@ -1167,8 +1054,7 @@ nav .navigation ul li a.btn-transparent {
   left: 942px;
   padding-top: 20px;
 }
-
-#register .form input {
+#login .form input {
   width: 435px;
   height: 54px;
   border-radius: 40px;
@@ -1183,7 +1069,21 @@ nav .navigation ul li a.btn-transparent {
   border-color: #49BBBD;
   background-color: #FFFFFF;
 }
+#login .form label {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
 
+/* register-design */
+#register aside {
+  width: 50%;
+}
+#register main {
+  margin-left: 100px;
+  width: 50%;
+}
 #register main a.btnseag {
   background-color: #49BBBD;
   width: 232px;
@@ -1200,7 +1100,6 @@ nav .navigation ul li a.btn-transparent {
   line-height: 100%;
   margin-left: 200px;
 }
-
 #register main a.btn-right {
   font-family: "Poppins";
   font-weight: 300;
@@ -1210,6 +1109,88 @@ nav .navigation ul li a.btn-transparent {
   color: #000000;
   text-decoration: none;
   margin-left: 180px;
+}
+#register .right h1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+  padding-bottom: 30px;
+  padding-left: 150px;
+}
+#register .right p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #5B5B5B;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#register .right .btn {
+  width: 350px;
+  height: 60px;
+  margin-left: 60px;
+  border-radius: 33px;
+  background-color: rgba(73, 187, 189, 0.6);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: flex;
+}
+#register .right .btn a.btnsea {
+  background-color: #49BBBD;
+  width: 146px;
+  height: 40px;
+  top: 203px;
+  left: 955px;
+  border-radius: 33px;
+  color: #FFFFFF;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#register .right .btn a.btn2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 329px;
+  height: 59px;
+  top: 193px;
+  left: 942px;
+  padding-top: 20px;
+}
+#register .form input {
+  width: 435px;
+  height: 54px;
+  border-radius: 40px;
+  border-width: 1px;
+  color: #ACACAC;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border-color: #49BBBD;
+  background-color: #FFFFFF;
+}
+#register .form label {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 /* blog-design */
