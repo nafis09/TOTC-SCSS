@@ -378,7 +378,6 @@ nav .navigation ul li a.btn-transparent:hover {
   filter: drop-shadow(5px 5px 5px rgba(38, 45, 118, 0.0784313725));
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
   transition: all 0.5s ease;
 }
 #all-in-one .all-base .all-box h2 {
