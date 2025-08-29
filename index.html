@@ -96,11 +96,11 @@
     <div class="counters">
     <div class="container">
 				<div>
-					<div class="counter" data-target="15000">0</div>
+					<div class="counter" data-target="15000" data-suffix="+">0</div>
 					<h3>Students</h3>
 				</div>
 				<div>
-					<div class="counter" data-target="75">0</div>
+					<div class="counter" data-target="75" data-suffix="%">0</div>
 					<h3>Total Success</h3>
 				</div>
 				<div>
@@ -218,6 +218,7 @@
             <div class="modal-body"><iframe width="870" height="489" src="https://www.youtube.com/embed/5ok-u--zwro?si=mSkVQouNxBSAoQBU" frameborder="0" allowfullscreen=""></iframe></div>
             <div class="modal-footer"></div>
             </div>
+            </a>
 
         </div>
     </main>
@@ -483,10 +484,11 @@
     counters.forEach(counter => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
+            const suffix = counter.getAttribute('data-suffix') || "";
+            const count = +counter.innerText.replace(/\D/g, "");
 
             // Lower inc to slow and higher to slow
-            const inc = target / speed;
+            const inc = Math.ceil(target / speed);
 
             // console.log(inc);
             // console.log(count);
@@ -494,11 +496,11 @@
             // Check if target is reached
             if (count < target) {
                 // Add inc to count and output in counter
-                counter.innerText = count + inc;
+                counter.innerText = (count + inc) + suffix;
                 // Call function every ms
-                setTimeout(updateCount, 1);
+                setTimeout(updateCount, 20);
             } else {
-                // counter.innerText = target;
+                counter.innerText = target + suffix;
             }
         };
 
