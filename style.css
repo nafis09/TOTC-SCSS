@@ -68,6 +68,13 @@ nav .navigation ul li a {
   line-height: 100%;
   font-family: "Poppins";
   font-weight: 400px;
+  padding: 10px 20px;
+}
+nav .navigation ul li a:hover {
+  background-color: white;
+  color: #49BBBD;
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 nav .navigation ul li a.btn-white {
   background-color: #FFFFFF;
@@ -77,6 +84,10 @@ nav .navigation ul li a.btn-white {
   border-radius: 80px;
   color: #5B5B5B;
 }
+nav .navigation ul li a.btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  color: white;
+}
 nav .navigation ul li a.btn-transparent {
   background-color: rgba(255, 255, 255, 0.3019607843);
   width: 160px;
@@ -84,6 +95,10 @@ nav .navigation ul li a.btn-transparent {
   padding: 10px 40px 10px 40px;
   border-radius: 80px;
   color: #FFFFFF;
+}
+nav .navigation ul li a.btn-transparent:hover {
+  background-color: white;
+  color: #595959;
 }
 
 #menu-btn {
@@ -466,10 +481,20 @@ nav .navigation ul li a.btn-transparent {
   border-style: solid;
   border-width: 2px;
   border-color: white;
+  transition: 0.3s ease-in-out;
+}
+#what .all-base .all-box .imgtxt .btn-white:hover {
+  background-color: rgba(35, 189, 238, 0.8980392157);
 }
 #what .all-base .all-box .imgtxt .btn-transparent {
-  background-color: rgba(35, 189, 238, 0.8980392157);
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
   margin-left: 20px;
+  transition: 0.3s ease-in-out;
+}
+#what .all-base .all-box .imgtxt .btn-transparent:hover {
+  background-color: rgba(35, 189, 238, 0.8980392157);
 }
 
 #learnmore {
@@ -531,6 +556,67 @@ nav .navigation ul li a.btn-transparent {
 #learnmore .right .mainimg {
   z-index: 5;
   position: relative;
+}
+#learnmore .right a {
+  transform: translateY(-500px);
+  position: absolute;
+  z-index: 999;
+  margin-left: 300px;
+}
+#learnmore .right .lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 620px;
+  left: -300px;
+  background: rgba(0, 0, 0, 0.8);
+}
+#learnmore .right .lightbox:target {
+  outline: none;
+  display: block;
+}
+#learnmore .right #videoModal {
+  border-radius: 0;
+  width: 870px;
+  margin: auto;
+}
+#learnmore .right #videoModal .modal-header {
+  background: #000;
+  border: 0;
+  color: #fff;
+  position: relative;
+  height: 35px;
+}
+#learnmore .right #videoModal .modal-header h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  margin-top: 200px;
+}
+#learnmore .right #videoModal .modal-body {
+  height: 489px;
+  padding: 0;
+  max-height: none;
+  overflow: hidden;
+}
+#learnmore .right #videoModal .modal-footer:empty {
+  display: none !important;
+}
+#learnmore .right #videoModal .close {
+  background: #49BBBD;
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  text-shadow: none;
+  top: 0;
+  width: 38px;
 }
 
 .lefthp {
@@ -674,6 +760,10 @@ nav .navigation ul li a.btn-transparent {
   padding-bottom: 50px;
   padding-left: 850px;
   padding-top: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
 }
 .button a {
   background-color: #FFFFFF;
@@ -686,6 +776,15 @@ nav .navigation ul li a.btn-transparent {
   border-width: 1px;
   border-color: #49BBBD;
   text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+  transition: 0.3s ease-in-out;
+}
+.button a:hover {
+  background-color: #49BBBD;
+  color: white;
 }
 
 #testimonial .left h6 {
@@ -714,6 +813,15 @@ nav .navigation ul li a.btn-transparent {
   border-width: 1px;
   border-color: #49BBBD;
   text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+  transition: 0.3s ease-in-out;
+}
+#testimonial .left .buttons a:hover {
+  background-color: #49BBBD;
+  color: white;
 }
 #testimonial .right .img {
   width: 560px;
@@ -821,6 +929,10 @@ nav .navigation ul li a.btn-transparent {
   text-decoration-style: solid;
   color: #696984;
 }
+#news .left a.btn:hover {
+  background-color: white;
+  color: #49BBBD;
+}
 #news .left a.btn-transparent {
   background-color: #49BBBD;
   width: 130px;
@@ -894,14 +1006,14 @@ nav .navigation ul li a.btn-transparent {
   color: #FFFFFF;
   margin-left: 30px;
 }
-#footer .copyright h5 {
+#footer .copyright a.cbtn {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 22px;
   line-height: 100%;
   text-align: center;
   color: #B2B3CF;
-  padding-top: 70px;
+  text-decoration: none;
 }
 #footer .copyright p {
   font-family: "Poppins";
@@ -949,6 +1061,7 @@ nav .navigation ul li a.btn-transparent {
   background-color: #252641;
   margin-right: 20px;
   border-color: #83839A;
+  margin-bottom: 50px;
 }
 
 /* login-design */
