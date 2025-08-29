@@ -376,6 +376,10 @@ nav .navigation ul li a.btn-transparent:hover {
   gap: 10px;
   background-color: #FFFFFF;
   filter: drop-shadow(5px 5px 5px rgba(38, 45, 118, 0.0784313725));
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
 }
 #all-in-one .all-base .all-box h2 {
   font-family: "Poppins";
@@ -385,6 +389,8 @@ nav .navigation ul li a.btn-transparent:hover {
   text-align: center;
   color: #2F327D;
   padding-top: 40px;
+  position: relative;
+  z-index: 2;
 }
 #all-in-one .all-base .all-box p {
   font-family: "Poppins";
@@ -394,6 +400,26 @@ nav .navigation ul li a.btn-transparent:hover {
   text-align: center;
   color: #696984;
   padding-top: 20px;
+}
+#all-in-one .all-base .all-box ::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, rgba(0, 255, 255, 0.3));
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+#all-in-one .all-base .all-box :hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+#all-in-one .all-base .all-box :hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }
 
 .btnC, #what .all-base .all-box .imgtxt .btn-transparent, #what .all-base .all-box .imgtxt .btn-white {
