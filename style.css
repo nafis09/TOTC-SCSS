@@ -164,6 +164,11 @@ nav .navigation ul li a.btn-transparent:hover {
   font-weight: 500;
   font-size: 24px;
   line-height: 100%;
+  transition: 0.3s ease-in-out;
+}
+#home .left a.btn-transparent:hover {
+  background-color: white;
+  color: #595959;
 }
 #home .left-btn {
   position: relative;
@@ -573,6 +578,10 @@ nav .navigation ul li a.btn-transparent:hover {
   text-decoration: underline;
   text-decoration-style: solid;
   color: #696984;
+}
+#learnmore .left a.btn:hover {
+  background-color: white;
+  color: #49BBBD;
 }
 #learnmore .left .img2 {
   margin-left: 600px;

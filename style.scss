@@ -195,6 +195,11 @@ a {
         font-weight: 500;
         font-size: 24px;
         line-height: 100%;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            background-color: white;
+            color: $gray2;
+        }
     }
 }
 
@@ -722,6 +727,10 @@ img {
             text-decoration: underline;
             text-decoration-style: solid;
             color: $text-color;
+            &:hover{
+                background-color: white;
+                color: $primary-color;
+            }
         }
 
         .img2 {
