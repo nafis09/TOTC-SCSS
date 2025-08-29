@@ -251,7 +251,7 @@ img {
         color: $gray2;
         background-color: $white-semi;
         backdrop-filter: blur(20px);
-        padding: 20px 40px 20px 40px;
+        padding: 20px 40px 30px 40px;
         display: flex;
         position: absolute;
         border-radius: 20px;
@@ -317,6 +317,10 @@ img {
             border-radius: 80px;
             color: $white;
             text-decoration: none;
+            font-family: $font-alt;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
         }
     }
 }
@@ -757,12 +761,12 @@ img {
             a {
                 transform: translateY(-500px);
                 position: absolute;
-                z-index: 999;
+                z-index: 998;
                 margin-left: 300px
                }
 
                     .lightbox {
-                        display: none;
+                        16t
                         position: fixed;
                         z-index: 999;
                         width: 100%;
@@ -773,10 +777,8 @@ img {
                         background: rgba(0,0,0,0.8);
                         opacity: 0;
                         pointer-events: none;
-                        transition: opacity 0.4s ease;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        transition: opacity 0.4s ease-in-out;
+                        
                     }
                    .lightbox:target {
                         outline: none;
@@ -789,11 +791,13 @@ img {
                         border-radius: 0;
                         width: 870px;
                         margin:auto;
-                        transform: translateY(-40px);
-                        transition: transform 0.4s ease;
+                        transition: transform 0.4s ease-in-out;
+                        max-width: 95%;
+                        transform: scale(0.95);  
                     }
                     .lightbox:target #videomodal{
-                        transform: translateY(0);
+                        transform: scale(1);
+                        opacity: 1;
                     }
                     #videoModal .modal-header {
                         background: #000;
@@ -806,7 +810,7 @@ img {
                     #videoModal .modal-header h3 {
                         font-size: 18px;
                         line-height: 22px;
-                        font-family:Arial, Helvetica, sans-serif;
+                        font-family: $font, sans-serif;
                         padding:5px;
                         margin-top: 200px;
                         text-decoration: none;
